@@ -1,0 +1,1511 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Elsai Core Documentation &#8212; Elsai Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=2f0cd986" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Elsai Docs</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="elsai-core-documentation">
+<h1>Elsai Core Documentation<a class="headerlink" href="#elsai-core-documentation" title="Link to this heading">#</a></h1>
+<p>Welcome to the official documentation for the <strong>Elsai Core</strong> framework, a modular and extensible system designed to enable seamless <strong>retrieval-augmented generation (RAG)</strong> workflows across multiple data formats, cloud services, and model providers.</p>
+<p>Elsai empowers developers and enterprises to build intelligent, language-driven applications with plug-and-play support for:</p>
+<ul class="simple">
+<li><p>Natural language querying over structured and unstructured data</p></li>
+<li><p>Document processing and chunking</p></li>
+<li><p>Cloud storage and webhook integrations</p></li>
+<li><p>Embedding generation and vector database operations</p></li>
+<li><p>Hybrid retrievers (semantic + keyword-based)</p></li>
+<li><p>Speech-to-text transcription using Whisper</p></li>
+<li><p>Prompt versioning and model orchestration</p></li>
+</ul>
+<p>Each module in the Elsai Core ecosystem is independently installable and follows a consistent interface design to make integration simple and flexible.</p>
+<p>This documentation provides detailed guidance on:</p>
+<ul class="simple">
+<li><p>Installation and setup</p></li>
+<li><p>Environment variables and credentials</p></li>
+<li><p>Python API usage with examples</p></li>
+<li><p>Supported backends and file formats</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you are using <strong>Python 3.13</strong> and have a properly configured <cite>.env</cite> file for any component that requires API authentication.</p>
+</div>
+<p>Start exploring the components below to get the most out of <strong>Elsai Core</strong>.</p>
+</section>
+<section id="elsai-model">
+<h1>Elsai Model<a class="headerlink" href="#elsai-model" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Model</strong> Package provides a unified interface to connect with three major LLM providers:</p>
+<ul class="simple">
+<li><p>OpenAI Connector</p></li>
+<li><p>Azure OpenAI Connector</p></li>
+<li><p>Bedrock Connector</p></li>
+</ul>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-model</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-model/<span class="w"> </span>elsai-model<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Link to this heading">#</a></h2>
+<section id="openaiconnector">
+<h3>1. OpenAIConnector<a class="headerlink" href="#openaiconnector" title="Link to this heading">#</a></h3>
+<p><cite>OpenAIConnector</cite> is a class designed to establish secure connections with the OpenAI API. It retrieves API credentials from environment variables and provides a method to initialize the connection with a specified language model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_model.openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIConnector</span>
+
+<span class="n">connector</span> <span class="o">=</span> <span class="n">OpenAIConnector</span><span class="p">(</span><span class="n">openai_key</span><span class="o">=</span><span class="s2">&quot;openai_key&quot;</span><span class="p">)</span>  <span class="c1"># Or set it as an environment variable</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">connector</span><span class="o">.</span><span class="n">connect_open_ai</span><span class="p">(</span><span class="n">modelname</span><span class="o">=</span><span class="s2">&quot;modelname&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variable</strong>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">OPENAI_API_KEY</span></code> – Your secret API key from OpenAI used to authenticate and authorize API requests.</p></li>
+</ul>
+</section>
+<section id="azureopenaiconnector">
+<h3>2. AzureOpenAIConnector<a class="headerlink" href="#azureopenaiconnector" title="Link to this heading">#</a></h3>
+<p><cite>AzureOpenAIConnector</cite> is a class that facilitates connecting to the Azure-hosted OpenAI service. It allows configuration through direct parameters or environment variables, and supports deployment-specific model initialization.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_model.azure_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureOpenAIConnector</span>
+<span class="n">connector</span> <span class="o">=</span> <span class="n">AzureOpenAIConnector</span><span class="p">(</span>
+    <span class="n">azure_endpoint</span><span class="o">=</span><span class="s2">&quot;https://your-azure-openai-endpoint.openai.azure.com/&quot;</span><span class="p">,</span>
+    <span class="n">openai_api_key</span><span class="o">=</span><span class="s2">&quot;your-azure-openai-api-key&quot;</span><span class="p">,</span>
+    <span class="n">openai_api_version</span><span class="o">=</span><span class="s2">&quot;2023-05-15&quot;</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span>  <span class="c1"># Or set it as an environment variable</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">connector</span><span class="o">.</span><span class="n">connect_azure_open_ai</span><span class="p">(</span><span class="n">deploymentname</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_API_KEY</span></code> – API key used to authenticate with the Azure-hosted OpenAI service.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_ENDPOINT</span></code> – Endpoint URL of your Azure OpenAI resource.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OPENAI_API_VERSION</span></code> – API version to use when connecting to Azure OpenAI (e.g., 2023-05-15).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_TEMPERATURE</span></code> – Temperature value to control the randomness of model outputs (e.g., 0.0 for deterministic results).</p></li>
+</ul>
+</section>
+<section id="bedrockconnector">
+<h3>3. BedrockConnector<a class="headerlink" href="#bedrockconnector" title="Link to this heading">#</a></h3>
+<p><cite>BedrockConnector</cite> is a class for interacting with Amazon Bedrock, enabling secure LLM access via AWS credentials. It supports initialization with parameters or environment variables and allows model-specific connection.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_model.bedrock</span><span class="w"> </span><span class="kn">import</span> <span class="n">BedrockConnector</span>
+
+<span class="n">bedrockconnector</span> <span class="o">=</span> <span class="n">BedrockConnector</span><span class="p">(</span>
+    <span class="n">aws_access_key</span><span class="o">=</span><span class="s2">&quot;your access key&quot;</span><span class="p">,</span>
+    <span class="n">aws_secret_key</span><span class="o">=</span><span class="s2">&quot;your secret key&quot;</span><span class="p">,</span>
+    <span class="n">aws_session_token</span><span class="o">=</span><span class="s2">&quot;your session token&quot;</span><span class="p">,</span>
+    <span class="n">aws_region</span><span class="o">=</span><span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="p">)</span>  <span class="c1"># Or set it as an environment variable</span>
+
+<span class="n">llm</span> <span class="o">=</span> <span class="n">bedrockconnector</span><span class="o">.</span><span class="n">connect_bedrock</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;amazon.titan-text-express-v1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_ACCESS_KEY_ID</span></code> – Your AWS access key ID for authenticating with AWS services.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SECRET_ACCESS_KEY</span></code> – Your AWS secret access key for secure authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SESSION_TOKEN</span></code> – Temporary session token for secure AWS authentication (used with IAM roles or temporary credentials).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_REGION</span></code> – AWS region (e.g., us-east-1) where the Bedrock service is hosted.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BEDROCK_TEMPERATURE</span></code> – Controls the randomness of the output from the model (optional; default can be set in code).</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-text-extractors">
+<h1>Elsai Text Extractors<a class="headerlink" href="#elsai-text-extractors" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Text Extractors</strong> package provides utilities to extract structured or unstructured text data from various document formats. It supports:</p>
+<ul class="simple">
+<li><p>CSV files</p></li>
+<li><p>DOCX files</p></li>
+<li><p>PDF documents</p></li>
+<li><p>Excel spreadsheets</p></li>
+</ul>
+<section id="id1">
+<h2>Prerequisites<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>Installation<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-text-extractors</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-text-extractors/<span class="w"> </span>elsai-text-extractors<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Components<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="csvfileextractor">
+<h3>1. CSVFileExtractor<a class="headerlink" href="#csvfileextractor" title="Link to this heading">#</a></h3>
+<p><cite>CSVFileExtractor</cite> reads and parses CSV files from the provided file path.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_text_extractors.csv_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">CSVFileExtractor</span>
+
+<span class="n">extractor</span> <span class="o">=</span> <span class="n">CSVFileExtractor</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;sample_data/sample.csv&quot;</span><span class="p">)</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">load_from_csv</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="docxtextextractor">
+<h3>2. DocxTextExtractor<a class="headerlink" href="#docxtextextractor" title="Link to this heading">#</a></h3>
+<p><cite>DocxTextExtractor</cite> extracts plain text from Microsoft Word (.docx) documents.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_text_extractors.docx_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">DocxTextExtractor</span>
+
+<span class="n">extractor</span> <span class="o">=</span> <span class="n">DocxTextExtractor</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;sample_data/sample.docx&quot;</span><span class="p">)</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">extract_text_from_docx</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="pypdftextextractor">
+<h3>3. PyPDFTextExtractor<a class="headerlink" href="#pypdftextextractor" title="Link to this heading">#</a></h3>
+<p><cite>PyPDFTextExtractor</cite> extracts text from PDF documents using the PyPDF library.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_text_extractors.pypdfloader</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFTextExtractor</span>
+
+<span class="n">extractor</span> <span class="o">=</span> <span class="n">PyPDFTextExtractor</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;sample_data/sample.pdf&quot;</span><span class="p">)</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">extract_text_from_pdf</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="unstructuredexcelloader">
+<h3>4. UnstructuredExcelLoader<a class="headerlink" href="#unstructuredexcelloader" title="Link to this heading">#</a></h3>
+<p><cite>UnstructuredExcelLoaderService</cite> loads and parses Excel spreadsheets (.xlsx), handling unstructured formats gracefully.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_text_extractors.unstructured_excel_loader</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredExcelLoaderService</span>
+
+<span class="n">extractor</span> <span class="o">=</span> <span class="n">UnstructuredExcelLoaderService</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;sample_data/sample.xlsx&quot;</span><span class="p">)</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">load_excel</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="elsai-ocr-extractors">
+<h1>Elsai OCR Extractors<a class="headerlink" href="#elsai-ocr-extractors" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai OCR Extractors</strong> package offers seamless integration with OCR services for extracting text from PDF documents. It currently supports:</p>
+<ul class="simple">
+<li><p>Azure Cognitive Service</p></li>
+<li><p>Azure Document Intelligence</p></li>
+<li><p>Llama Parse</p></li>
+<li><p>OpenAI VisionAI</p></li>
+<li><p>Amazon Textract</p></li>
+</ul>
+<section id="id4">
+<h2>Prerequisites<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>Installation<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-ocr-extractors</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-ocr-extractors/<span class="w"> </span>elsai-ocr-extractors<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>Components<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="azurecognitiveservice">
+<h3>1. AzureCognitiveService<a class="headerlink" href="#azurecognitiveservice" title="Link to this heading">#</a></h3>
+<p><cite>AzureCognitiveService</cite> is a class for extracting text from PDFs using Azure’s Cognitive Services. It supports both direct initialization and environment variable-based configuration.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_ocr_extractors.azure_cognitive_service</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureCognitiveService</span>
+
+<span class="n">azure_ocr</span> <span class="o">=</span> <span class="n">AzureCognitiveService</span><span class="p">(</span>
+    <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;your-file-path-here&quot;</span><span class="p">,</span>
+    <span class="n">subscription_key</span><span class="o">=</span><span class="s2">&quot;your-subscription-key-here&quot;</span><span class="p">,</span>
+    <span class="n">endpoint</span><span class="o">=</span><span class="s2">&quot;your-endpoint-here&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set it as an environment variable</span>
+
+<span class="n">extracted_text</span> <span class="o">=</span> <span class="n">azure_ocr</span><span class="o">.</span><span class="n">extract_text_from_pdf</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_SUBSCRIPTION_KEY</span></code> – Your Azure OCR subscription key</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_ENDPOINT</span></code> – Your Azure OCR endpoint</p></li>
+</ul>
+</section>
+<section id="azuredocumentintelligence">
+<h3>2. AzureDocumentIntelligence<a class="headerlink" href="#azuredocumentintelligence" title="Link to this heading">#</a></h3>
+<p><cite>AzureDocumentIntelligence</cite> is a class that utilizes Azure’s advanced Document Intelligence to extract structured text from documents like PDFs.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_ocr_extractors.azure_document_intelligence</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureDocumentIntelligence</span>
+
+<span class="n">azure_ocr</span> <span class="o">=</span> <span class="n">AzureDocumentIntelligence</span><span class="p">(</span>
+    <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;your-file-path&quot;</span><span class="p">,</span>
+    <span class="n">vision_endpoint</span><span class="o">=</span><span class="s2">&quot;your-vision-endpoint&quot;</span><span class="p">,</span>
+    <span class="n">vision_key</span><span class="o">=</span><span class="s2">&quot;your-vision-key&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set it as an environment variable</span>
+
+<span class="n">extracted_text</span> <span class="o">=</span> <span class="n">azure_ocr</span><span class="o">.</span><span class="n">extract_text_from_pdf</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">VISION_ENDPOINT</span></code> – Endpoint for Azure Document Intelligence</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">VISION_KEY</span></code> – Subscription key for Azure Document Intelligence</p></li>
+</ul>
+</section>
+<section id="llama-parse-extractor">
+<h3>3. Llama Parse Extractor<a class="headerlink" href="#llama-parse-extractor" title="Link to this heading">#</a></h3>
+<p><cite>LlamaParseExtractor</cite> is a wrapper class for interacting with the LlamaParse API to parse and load CSV data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_ocr_extractors.llama_parse_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">LlamaParseExtractor</span>
+
+<span class="n">llama_parse_extractor</span> <span class="o">=</span> <span class="n">LlamaParseExtractor</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;llama_parse_api_key&quot;</span><span class="p">)</span>
+<span class="n">loaded_data</span> <span class="o">=</span> <span class="n">llama_parse_extractor</span><span class="o">.</span><span class="n">load_csv</span><span class="p">(</span><span class="s2">&quot;path/to/your/file.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="visionai-extractor">
+<h3>4. VisionAI Extractor<a class="headerlink" href="#visionai-extractor" title="Link to this heading">#</a></h3>
+<p><cite>VisionAIExtractor</cite> uses OpenAI’s Vision AI to extract text from PDFs by converting pages to images and processing them using a language model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_ocr_extractors.visionai_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">VisionAIExtractor</span>
+
+<span class="n">extractor</span> <span class="o">=</span> <span class="n">VisionAIExtractor</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;openai_key&quot;</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;gpt-4o&quot;</span><span class="p">)</span>  <span class="c1"># Or set API key in env</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">extract_text_from_pdf</span><span class="p">(</span><span class="n">pdf_path</span><span class="o">=</span><span class="s2">&quot;path_to_pdf.pdf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variable:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">OPENAI_API_KEY</span></code> – Your secret API key from OpenAI used to authenticate and authorize API requests.</p></li>
+</ul>
+</section>
+<section id="amazon-textract">
+<h3>5. Amazon Textract<a class="headerlink" href="#amazon-textract" title="Link to this heading">#</a></h3>
+<p><cite>AwsTextractConnector</cite> interfaces with AWS Textract to extract text from PDFs. It supports multiple modes of operation including async document processing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_ocr_extractors.awstextract</span><span class="w"> </span><span class="kn">import</span> <span class="n">AwsTextractConnector</span>
+
+<span class="n">textract_connector</span> <span class="o">=</span> <span class="n">AwsTextractConnector</span><span class="p">(</span>
+    <span class="n">access_key</span><span class="o">=</span><span class="s2">&quot;aws_access_key&quot;</span><span class="p">,</span>
+    <span class="n">secret_key</span><span class="o">=</span><span class="s2">&quot;aws_secret_key&quot;</span><span class="p">,</span>
+    <span class="n">session_token</span><span class="o">=</span><span class="s2">&quot;aws_session_token&quot;</span><span class="p">,</span>
+    <span class="n">region_name</span><span class="o">=</span><span class="s2">&quot;aws_region&quot;</span><span class="p">,</span>
+<span class="p">)</span>  <span class="c1"># Or set environment variables</span>
+
+<span class="c1"># Extract text from local PDF</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">textract_connector</span><span class="o">.</span><span class="n">extract_text</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;path_to_pdf.pdf&quot;</span><span class="p">,</span> <span class="n">s3_bucket</span><span class="o">=</span><span class="s2">&quot;your_s3_bucket_name&quot;</span><span class="p">,</span> <span class="n">s3_folder</span><span class="o">=</span><span class="s2">&quot;your_s3_folder_name (OPTIONAL)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Extract text from S3</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">textract_connector</span><span class="o">.</span><span class="n">extract_text_from_S3</span><span class="p">(</span><span class="n">s3_url</span><span class="o">=</span><span class="s2">&quot;s3://bucket_name/folder_name/file.pdf&quot;</span><span class="p">)</span>
+
+<span class="c1"># Extract text with features</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">textract_connector</span><span class="o">.</span><span class="n">extract_text_features_from_S3</span><span class="p">(</span>
+    <span class="n">s3_url</span><span class="o">=</span><span class="s2">&quot;s3://bucket_name/folder_name/file.pdf&quot;</span><span class="p">,</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;TABLES&quot;</span><span class="p">,</span> <span class="s2">&quot;FORMS&quot;</span><span class="p">,</span> <span class="s2">&quot;TEXT&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># Asynchronous processing</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">textract_connector</span><span class="o">.</span><span class="n">async_process_document</span><span class="p">(</span>
+    <span class="n">s3_url</span><span class="o">=</span><span class="s2">&quot;s3://bucket_name/folder_name/file.pdf&quot;</span><span class="p">,</span>
+    <span class="n">feature_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tables&quot;</span><span class="p">,</span> <span class="s2">&quot;forms&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_ACCESS_KEY_ID</span></code> – Your AWS access key ID used to authenticate API requests.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SECRET_ACCESS_KEY</span></code> – Your AWS secret key paired with the access key for secure authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SESSION_TOKEN</span></code> – Temporary session token for using AWS STS or temporary credentials.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_REGION</span></code> – The AWS region where your resources (e.g., S3 bucket) are located.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">S3_BUCKET</span></code> – The name of your S3 bucket used for file uploads/downloads (REQUIRED ONLY FOR extract_text()).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">S3_FOLDER</span></code> – The folder path inside the S3 bucket for organizing files. (REQUIRED ONLY FOR extract_text()).</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-prompts">
+<h1>Elsai Prompts<a class="headerlink" href="#elsai-prompts" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Prompts</strong> Package provides an interface to connect with the <strong>Pezzo Prompt API</strong>, allowing users to retrieve and manage project-specific prompts efficiently.</p>
+<section id="id7">
+<h2>Prerequisites<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id8">
+<h2>Installation<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-prompts</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-prompts/<span class="w"> </span>elsai-prompts<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="component">
+<h2>Component<a class="headerlink" href="#component" title="Link to this heading">#</a></h2>
+<section id="pezzopromptrenderer">
+<h3>1. PezzoPromptRenderer<a class="headerlink" href="#pezzopromptrenderer" title="Link to this heading">#</a></h3>
+<p><cite>PezzoPromptRenderer</cite> is a class designed to fetch and retrieve prompts from the Pezzo API, enabling seamless access to project-specific prompts using either direct initialization or environment variables.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_prompts.pezzo</span><span class="w"> </span><span class="kn">import</span> <span class="n">PezzoPromptRenderer</span>
+
+<span class="n">pezzo</span> <span class="o">=</span> <span class="n">PezzoPromptRenderer</span><span class="p">(</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;pezzo_api_key&quot;</span><span class="p">,</span>
+    <span class="n">project_id</span><span class="o">=</span><span class="s2">&quot;project_id&quot;</span><span class="p">,</span>
+    <span class="n">environment</span><span class="o">=</span><span class="s2">&quot;project_environment&quot;</span><span class="p">,</span>
+    <span class="n">server_url</span><span class="o">=</span><span class="s2">&quot;server_url&quot;</span>
+<span class="p">)</span>  <span class="c1"># Set as environment variables or pass directly</span>
+
+<span class="n">pezzo_prompts</span> <span class="o">=</span> <span class="n">pezzo</span><span class="o">.</span><span class="n">get_prompt</span><span class="p">(</span><span class="s2">&quot;Prompt_Name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PEZZO_API_KEY</span></code> – API Key for authenticating with the Pezzo API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PEZZO_PROJECT_ID</span></code> – Identifier for the Pezzo project</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PEZZO_ENVIRONMENT</span></code> – Environment name (e.g., dev, prod)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PEZZO_SERVER_URL</span></code> – Pezzo server base URL</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-db-connectors">
+<h1>Elsai DB Connectors<a class="headerlink" href="#elsai-db-connectors" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai DB</strong> package provides connectors to interact with various SQL databases such as <strong>MySQL</strong>, <strong>PostgreSQL</strong>, and <strong>ODBC</strong> variants using natural language queries powered by an LLM.</p>
+<section id="id9">
+<h2>Prerequisites<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id10">
+<h2>Installation<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-db</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-db/<span class="w"> </span>elsai-db<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h2>Components<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="required-environment-variables">
+<h3>Required Environment Variables<a class="headerlink" href="#required-environment-variables" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DB_NAME</span></code> – Name of the database</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DB_URL</span></code> – Hostname or connection string of the database</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DB_USER</span></code> – Username for database login</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DB_PASSWORD</span></code> – Password for database login</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DB_DRIVER_NAME</span></code> – ODBC driver name (only for ODBC connectors)</p></li>
+</ul>
+</section>
+<section id="mysqlsqlconnector">
+<h3>1. MySQLSQLConnector<a class="headerlink" href="#mysqlsqlconnector" title="Link to this heading">#</a></h3>
+<p><cite>MySQLSQLConnector</cite> connects to a MySQL database using standard credentials and executes LLM-based queries.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_db.mysql</span><span class="w"> </span><span class="kn">import</span> <span class="n">MySQLSQLConnector</span>
+
+<span class="n">mysql_connector</span> <span class="o">=</span> <span class="n">MySQLSQLConnector</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="s2">&quot;llm-model&quot;</span><span class="p">,</span>
+                                    <span class="n">database_name</span><span class="o">=</span><span class="s2">&quot;your_database_name&quot;</span><span class="p">,</span>
+                                    <span class="n">database_password</span><span class="o">=</span><span class="s2">&quot;your_database_password&quot;</span><span class="p">,</span>
+                                    <span class="n">database_user</span><span class="o">=</span><span class="s2">&quot;your_database_user&quot;</span><span class="p">,</span>
+                                    <span class="n">database_url</span><span class="o">=</span><span class="s2">&quot;your_database_url&quot;</span><span class="p">)</span>  <span class="c1"># Or use env vars: DB_NAME, DB_URL, DB_USER, DB_PASSWORD</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">mysql_connector</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;what are the names of all employees in the company?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="postgresqlconnector">
+<h3>2. PostgreSQLConnector<a class="headerlink" href="#postgresqlconnector" title="Link to this heading">#</a></h3>
+<p><cite>PostgreSQLConnector</cite> connects to a PostgreSQL database using standard credentials.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_db.postgres</span><span class="w"> </span><span class="kn">import</span> <span class="n">PostgreSQLConnector</span>
+
+<span class="n">postgres_connector</span> <span class="o">=</span> <span class="n">PostgreSQLConnector</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="s2">&quot;llm-model&quot;</span><span class="p">,</span>
+                                         <span class="n">database_name</span><span class="o">=</span><span class="s2">&quot;your_database_name&quot;</span><span class="p">,</span>
+                                         <span class="n">database_password</span><span class="o">=</span><span class="s2">&quot;your_database_password&quot;</span><span class="p">,</span>
+                                         <span class="n">database_user</span><span class="o">=</span><span class="s2">&quot;your_database_user&quot;</span><span class="p">,</span>
+                                         <span class="n">database_url</span><span class="o">=</span><span class="s2">&quot;your_database_url&quot;</span><span class="p">)</span>  <span class="c1"># Or use env vars: DB_NAME, DB_URL, DB_USER, DB_PASSWORD</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">postgres_connector</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;what are the names of all employees in the company?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="odbcmysqlconnector">
+<h3>3. OdbcMysqlConnector<a class="headerlink" href="#odbcmysqlconnector" title="Link to this heading">#</a></h3>
+<p><cite>OdbcMysqlConnector</cite> connects to MySQL via ODBC, which is useful for Windows environments or custom drivers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_db.odbc_mysql</span><span class="w"> </span><span class="kn">import</span> <span class="n">OdbcMysqlConnector</span>
+
+<span class="n">odbc_mysql_connector</span> <span class="o">=</span> <span class="n">OdbcMysqlConnector</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="s2">&quot;llm-model&quot;</span><span class="p">,</span>
+                                          <span class="n">database_name</span><span class="o">=</span><span class="s2">&quot;your_database_name&quot;</span><span class="p">,</span>
+                                          <span class="n">database_password</span><span class="o">=</span><span class="s2">&quot;your_database_password&quot;</span><span class="p">,</span>
+                                          <span class="n">database_user</span><span class="o">=</span><span class="s2">&quot;your_database_user&quot;</span><span class="p">,</span>
+                                          <span class="n">database_url</span><span class="o">=</span><span class="s2">&quot;your_database_url&quot;</span><span class="p">,</span>
+                                          <span class="n">driver_name</span><span class="o">=</span><span class="s2">&quot;your_odbc_driver_name&quot;</span><span class="p">)</span>  <span class="c1"># Or use env vars: DB_NAME, DB_URL, DB_USER, DB_PASSWORD, DB_DRIVER_NAME</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">odbc_mysql_connector</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;what are the names of all employees in the company?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="odbcpostgresqlconnector">
+<h3>4. OdbcPostgresqlConnector<a class="headerlink" href="#odbcpostgresqlconnector" title="Link to this heading">#</a></h3>
+<p><cite>OdbcPostgresqlConnector</cite> connects to PostgreSQL using ODBC drivers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_db.odbc_postgres</span><span class="w"> </span><span class="kn">import</span> <span class="n">OdbcPostgresqlConnector</span>
+
+<span class="n">odbc_postgres_connector</span> <span class="o">=</span> <span class="n">OdbcPostgresqlConnector</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="s2">&quot;llm-model&quot;</span><span class="p">,</span>
+                                                  <span class="n">database_name</span><span class="o">=</span><span class="s2">&quot;your_database_name&quot;</span><span class="p">,</span>
+                                                  <span class="n">database_password</span><span class="o">=</span><span class="s2">&quot;your_database_password&quot;</span><span class="p">,</span>
+                                                  <span class="n">database_user</span><span class="o">=</span><span class="s2">&quot;your_database_user&quot;</span><span class="p">,</span>
+                                                  <span class="n">database_url</span><span class="o">=</span><span class="s2">&quot;your_database_url&quot;</span><span class="p">,</span>
+                                                  <span class="n">driver_name</span><span class="o">=</span><span class="s2">&quot;your_odbc_driver_name&quot;</span><span class="p">)</span>  <span class="c1"># Or use env vars: DB_NAME, DB_URL, DB_USER, DB_PASSWORD, DB_DRIVER_NAME</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">odbc_postgres_connector</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;what are the names of all employees in the company?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="elsai-cloud-connectors">
+<h1>Elsai Cloud Connectors<a class="headerlink" href="#elsai-cloud-connectors" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Cloud Connectors</strong> package provides utilities to interact with various cloud storage and notification services. It currently supports:</p>
+<ul class="simple">
+<li><p>AWS S3</p></li>
+<li><p>Azure Blob Storage</p></li>
+<li><p>Microsoft Graph Webhooks</p></li>
+<li><p>Microsoft OneDrive</p></li>
+<li><p>Microsoft SharePoint</p></li>
+<li><p>Elastic Search Connector</p></li>
+</ul>
+<section id="id12">
+<h2>Prerequisites<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id13">
+<h2>Installation<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-cloud-connectors</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-cloud-connectors/<span class="w"> </span>elsai-cloud-connectors<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id14">
+<h2>Components<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<section id="awss3connector">
+<h3>1. AwsS3Connector<a class="headerlink" href="#awss3connector" title="Link to this heading">#</a></h3>
+<p><cite>AwsS3Connector</cite> is a class for interacting with AWS S3 buckets, enabling secure upload, download, and deletion of files.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.aws</span><span class="w"> </span><span class="kn">import</span> <span class="n">AwsS3Connector</span>
+
+<span class="n">s3_client</span> <span class="o">=</span> <span class="n">AwsS3Connector</span><span class="p">(</span>
+    <span class="n">access_key</span><span class="o">=</span><span class="s2">&quot;your_access_key&quot;</span><span class="p">,</span>
+    <span class="n">secret_key</span><span class="o">=</span><span class="s2">&quot;your_secret_key&quot;</span><span class="p">,</span>
+    <span class="n">session_token</span><span class="o">=</span><span class="s2">&quot;your_session_token&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or use environment variables: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN</span>
+
+ <span class="c1"># Upload a local file to the specified S3 bucket and key (path in S3)</span>
+
+<span class="n">s3_client</span><span class="o">.</span><span class="n">upload_file_to_s3</span><span class="p">(</span>
+    <span class="n">bucket_name</span><span class="o">=</span><span class="s2">&quot;your_bucket_name&quot;</span><span class="p">,</span>
+    <span class="n">s3_key</span><span class="o">=</span><span class="s2">&quot;your_s3_key&quot;</span><span class="p">,</span>
+    <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;path/to/your/file.txt&quot;</span>
+<span class="p">)</span>
+
+ <span class="c1"># Download a file from the specified S3 bucket and key to a local path</span>
+
+<span class="n">s3_client</span><span class="o">.</span><span class="n">download_file_from_s3</span><span class="p">(</span>
+    <span class="n">bucket_name</span><span class="o">=</span><span class="s2">&quot;your_bucket_name&quot;</span><span class="p">,</span>
+    <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;your_s3_key&quot;</span><span class="p">,</span>
+    <span class="n">download_path</span><span class="o">=</span><span class="s2">&quot;path/to/download/file.txt&quot;</span>
+<span class="p">)</span>
+
+ <span class="c1"># Delete a file from the specified S3 bucket</span>
+
+<span class="n">s3_client</span><span class="o">.</span><span class="n">delete_file_from_s3</span><span class="p">(</span>
+    <span class="n">bucket_name</span><span class="o">=</span><span class="s2">&quot;your_bucket_name&quot;</span><span class="p">,</span>
+    <span class="n">s3_key</span><span class="o">=</span><span class="s2">&quot;your_s3_key&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_ACCESS_KEY_ID</span></code> – Your AWS access key ID</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SECRET_ACCESS_KEY</span></code> – Your AWS secret access key</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AWS_SESSION_TOKEN</span></code> – Temporary session token for authentication</p></li>
+</ul>
+</section>
+<section id="azureblobstorage">
+<h3>2. AzureBlobStorage<a class="headerlink" href="#azureblobstorage" title="Link to this heading">#</a></h3>
+<p><cite>AzureBlobStorage</cite> is a class for downloading files from Azure Blob containers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.azureblobstorage</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureBlobStorage</span>
+
+<span class="n">azure_blob_client</span> <span class="o">=</span> <span class="n">AzureBlobStorage</span><span class="p">(</span><span class="n">connection_string</span><span class="o">=</span><span class="s2">&quot;your_connection_string&quot;</span><span class="p">)</span>
+
+<span class="n">azure_blob_client</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span>
+    <span class="n">container_name</span><span class="o">=</span><span class="s2">&quot;your_container_name&quot;</span><span class="p">,</span>
+    <span class="n">blob_name</span><span class="o">=</span><span class="s2">&quot;your_blob_name&quot;</span><span class="p">,</span>
+    <span class="n">target_folder_path</span><span class="o">=</span><span class="s2">&quot;path/to/download/folder&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="msgraphwebhooks">
+<h3>3. MSGraphWebhooks<a class="headerlink" href="#msgraphwebhooks" title="Link to this heading">#</a></h3>
+<p><cite>MSGraphWebhooks</cite> helps manage webhook subscriptions for Microsoft Graph API resources.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.microsoft_webhooks</span><span class="w"> </span><span class="kn">import</span> <span class="n">MSGraphWebhooks</span>
+
+<span class="n">ms_graph</span> <span class="o">=</span> <span class="n">MSGraphWebhooks</span><span class="p">(</span>
+    <span class="n">client_id</span><span class="o">=</span><span class="s2">&quot;your_client_id&quot;</span><span class="p">,</span>
+    <span class="n">tenant_id</span><span class="o">=</span><span class="s2">&quot;your_tenant_id&quot;</span><span class="p">,</span>
+    <span class="n">client_secret</span><span class="o">=</span><span class="s2">&quot;your_client_secret&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or use environment variables: CLIENT_ID, TENANT_ID, CLIENT_SECRET</span>
+
+
+ <span class="c1"># Create a new subscription (webhook) to listen for changes on a resource</span>
+<span class="n">ms_graph</span><span class="o">.</span><span class="n">create_subscription</span><span class="p">(</span>
+    <span class="n">change_type</span><span class="o">=</span><span class="s2">&quot;change_type&quot;</span><span class="p">,</span>
+    <span class="n">notification_url</span><span class="o">=</span><span class="s2">&quot;https://webhook.example.com/send-notifications&quot;</span><span class="p">,</span>
+    <span class="n">resource</span><span class="o">=</span><span class="s2">&quot;me/mailFolders(&#39;Inbox&#39;)/messages&quot;</span><span class="p">,</span>
+    <span class="n">expiration_date_time</span><span class="o">=</span><span class="s2">&quot;2016-11-20T18:23:45.9356913Z&quot;</span><span class="p">,</span>  <span class="c1"># datetime format</span>
+    <span class="n">client_state</span><span class="o">=</span><span class="s2">&quot;custom_state_123&quot;</span>
+<span class="p">)</span>
+
+ <span class="c1"># Retrieve details of a specific subscription by its ID</span>
+<span class="n">subscriptions</span> <span class="o">=</span> <span class="n">ms_graph</span><span class="o">.</span><span class="n">get_subscription</span><span class="p">(</span><span class="n">subscription_id</span><span class="o">=</span><span class="s2">&quot;your_subscription_id&quot;</span><span class="p">)</span>
+
+
+ <span class="c1"># List all current active subscriptions for the authenticated app</span>
+<span class="n">subs_list</span> <span class="o">=</span> <span class="n">ms_graph</span><span class="o">.</span><span class="n">list_subscriptions</span><span class="p">()</span>
+
+ <span class="c1"># Update an existing subscription&#39;s expiration or notification URL</span>
+<span class="n">ms_graph</span><span class="o">.</span><span class="n">update_subscription</span><span class="p">(</span>
+    <span class="n">subscription_id</span><span class="o">=</span><span class="s2">&quot;subscription_id&quot;</span><span class="p">,</span>
+    <span class="n">notification_url</span><span class="o">=</span><span class="s2">&quot;https://webhook.example.com/send-notifications&quot;</span><span class="p">,</span>
+    <span class="n">expiration_date_time</span><span class="o">=</span><span class="s2">&quot;2016-11-20T18:23:45.9356913Z&quot;</span>
+<span class="p">)</span>
+
+
+ <span class="c1"># Delete a subscription by its ID to stop receiving notifications</span>
+<span class="n">ms_graph</span><span class="o">.</span><span class="n">delete_subscription</span><span class="p">(</span><span class="n">subscription_id</span><span class="o">=</span><span class="s2">&quot;subscription_id&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TENANT_ID</span></code> – Azure Active Directory tenant identifier used for authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_ID</span></code> – Application (client) ID registered in Azure AD.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_SECRET</span></code> – Client secret generated for the Azure AD app to authorize access.</p></li>
+</ul>
+</section>
+<section id="onedriveservice">
+<h3>4. OneDriveService<a class="headerlink" href="#onedriveservice" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.onedrive</span><span class="w"> </span><span class="kn">import</span> <span class="n">OneDriveService</span>
+
+<span class="n">one_drive_service</span> <span class="o">=</span> <span class="n">OneDriveService</span><span class="p">(</span>
+    <span class="n">tenant_id</span><span class="o">=</span><span class="s2">&quot;your_tenant_id&quot;</span><span class="p">,</span>
+    <span class="n">client_id</span><span class="o">=</span><span class="s2">&quot;your_client_id&quot;</span><span class="p">,</span>
+    <span class="n">client_secret</span><span class="o">=</span><span class="s2">&quot;your_client_secret&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set in environment variables</span>
+
+ <span class="c1"># Get the unique Microsoft user ID associated with the email address</span>
+<span class="n">user_id</span> <span class="o">=</span> <span class="n">one_drive_service</span><span class="o">.</span><span class="n">get_user_id</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="s2">&quot;your_mail_address&quot;</span><span class="p">)</span>
+
+
+ <span class="c1"># Upload a local file to a specified folder in the OneDrive of the given user</span>
+<span class="n">one_drive_service</span><span class="o">.</span><span class="n">upload_file_to_onedrive</span><span class="p">(</span>
+    <span class="n">email</span><span class="o">=</span><span class="s2">&quot;your_mail_address&quot;</span><span class="p">,</span>
+    <span class="n">local_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/your/file.txt&quot;</span><span class="p">,</span>
+    <span class="n">folder_path</span><span class="o">=</span><span class="s2">&quot;path/to/folder/in/onedrive&quot;</span>
+<span class="p">)</span>
+
+ <span class="c1"># Retrieve a list of files from a specific folder in the user&#39;s OneDrive</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">one_drive_service</span><span class="o">.</span><span class="n">retrieve_onedrive_files_from_folder</span><span class="p">(</span>
+    <span class="n">email</span><span class="o">=</span><span class="s2">&quot;your_mail_address&quot;</span><span class="p">,</span>
+    <span class="n">folder_path</span><span class="o">=</span><span class="s2">&quot;path/to/folder/in/onedrive&quot;</span>
+<span class="p">)</span>
+
+ <span class="c1"># Download a specific file from the user&#39;s OneDrive to a local directory</span>
+<span class="n">one_drive_service</span><span class="o">.</span><span class="n">download_file_from_onedrive</span><span class="p">(</span>
+    <span class="n">email</span><span class="o">=</span><span class="s2">&quot;your_mail_address&quot;</span><span class="p">,</span>
+    <span class="n">file_id</span><span class="o">=</span><span class="s2">&quot;your_file_id&quot;</span><span class="p">,</span>
+    <span class="n">target_folder</span><span class="o">=</span><span class="s2">&quot;path/to/download/folder&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TENANT_ID</span></code> – Azure Active Directory tenant identifier used for authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_ID</span></code> – Application (client) ID registered in Azure AD.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_SECRET</span></code> – Client secret generated for the Azure AD app to authorize access.</p></li>
+</ul>
+</section>
+<section id="sharepointservice">
+<h3>5. SharePointService<a class="headerlink" href="#sharepointservice" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.sharepoint</span><span class="w"> </span><span class="kn">import</span> <span class="n">SharePointService</span>
+
+<span class="n">sharepoint_service</span> <span class="o">=</span> <span class="n">SharePointService</span><span class="p">(</span>
+    <span class="n">tenant_id</span><span class="o">=</span><span class="s2">&quot;your_tenant_id&quot;</span><span class="p">,</span>
+    <span class="n">client_id</span><span class="o">=</span><span class="s2">&quot;your_client_id&quot;</span><span class="p">,</span>
+    <span class="n">client_secret</span><span class="o">=</span><span class="s2">&quot;your_client_secret&quot;</span><span class="p">,</span>
+    <span class="n">site_hostname</span><span class="o">=</span><span class="s2">&quot;your_site_hostname&quot;</span><span class="p">,</span>
+    <span class="n">site_path</span><span class="o">=</span><span class="s2">&quot;your_site_path&quot;</span><span class="p">,</span>
+    <span class="n">drive_name</span><span class="o">=</span><span class="s2">&quot;your_drive_name&quot;</span><span class="p">,</span>
+    <span class="n">drive_id</span><span class="o">=</span><span class="s2">&quot;your_drive_id&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set in environment variables</span>
+
+ <span class="c1"># Upload a local file to a specified folder in SharePoint</span>
+<span class="n">sharepoint_service</span><span class="o">.</span><span class="n">upload_file_to_sharepoint</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;path/to/your/file.txt&quot;</span><span class="p">,</span> <span class="n">target_folder</span><span class="o">=</span><span class="s2">&quot;Documents/FolderName&quot;</span><span class="p">)</span>
+
+ <span class="c1"># Retrieve a list of files from a specific folder in SharePoint</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">sharepoint_service</span><span class="o">.</span><span class="n">retrieve_sharepoint_files_from_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="o">=</span><span class="s2">&quot;folderName&quot;</span><span class="p">)</span>
+
+ <span class="c1"># Download a specific file from SharePoint to a local directory</span>
+<span class="n">sharepoint_service</span><span class="o">.</span><span class="n">download_file_from_sharepoint</span><span class="p">(</span><span class="n">file_id</span><span class="o">=</span><span class="s2">&quot;your_file_id&quot;</span><span class="p">,</span> <span class="n">target_folder</span><span class="o">=</span><span class="s2">&quot;path/to/download/folder&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TENANT_ID</span></code> – Azure Active Directory tenant identifier used for authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_ID</span></code> – Application (client) ID registered in Azure AD.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CLIENT_SECRET</span></code> – Client secret generated for the Azure AD app to authorize access.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SITE_HOSTNAME</span></code> – SharePoint domain (e.g., <code class="docutils literal notranslate"><span class="pre">yourcompany.sharepoint.com</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SITE_PATH</span></code> – Path to the SharePoint site (e.g., <code class="docutils literal notranslate"><span class="pre">/sites/yoursite</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DRIVE_NAME</span></code> – Name of the document library (usually <code class="docutils literal notranslate"><span class="pre">Documents</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DRIVE_ID</span></code> – Unique identifier for the SharePoint drive within the site.</p></li>
+</ul>
+</section>
+<section id="elasticsearch">
+<h3>6. ElasticSearch<a class="headerlink" href="#elasticsearch" title="Link to this heading">#</a></h3>
+<p><cite>ElasticSearchConnector</cite> is used for interacting with an Elasticsearch index using API keys.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_cloud.elastic_search</span><span class="w"> </span><span class="kn">import</span> <span class="n">ElasticSearchConnector</span>
+
+<span class="n">es_connector</span> <span class="o">=</span> <span class="n">ElasticSearchConnector</span><span class="p">(</span>
+    <span class="n">cloud_url</span><span class="o">=</span><span class="s2">&quot;your_cloud_url&quot;</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;your_api_key&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or use environment variables: ELASTIC_SEARCH_URL, ELASTIC_SEARCH_API_KEY</span>
+
+
+<span class="c1"># Add a document</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a sample document to be indexed in Elasticsearch.&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">es_connector</span><span class="o">.</span><span class="n">add_document</span><span class="p">(</span><span class="n">index_name</span><span class="o">=</span><span class="s2">&quot;sampleindex&quot;</span><span class="p">,</span> <span class="n">document</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span> <span class="n">doc_id</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Retrieve a document</span>
+<span class="n">retrieved_doc</span> <span class="o">=</span> <span class="n">es_connector</span><span class="o">.</span><span class="n">get_document</span><span class="p">(</span><span class="n">index_name</span><span class="o">=</span><span class="s2">&quot;sampleindex&quot;</span><span class="p">,</span> <span class="n">doc_id</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Search documents</span>
+<span class="n">search_doc</span> <span class="o">=</span> <span class="n">es_connector</span><span class="o">.</span><span class="n">search_documents</span><span class="p">(</span>
+    <span class="n">index_name</span><span class="o">=</span><span class="s2">&quot;sampleindex&quot;</span><span class="p">,</span>
+    <span class="n">query</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;match&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;sample&quot;</span><span class="p">}}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ELASTIC_SEARCH_URL</span></code> – URL of the Elasticsearch cloud instance</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ELASTIC_SEARCH_API_KEY</span></code> – API key for authenticating with Elasticsearch</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-embeddings">
+<h1>Elsai Embeddings<a class="headerlink" href="#elsai-embeddings" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Embeddings</strong> module enables seamless embedding generation using Azure OpenAI models.</p>
+<section id="id15">
+<h2>Prerequisites<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id16">
+<h2>Installation<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-embeddings</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-embeddings/<span class="w"> </span>elsai-embeddings<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id17">
+<h2>Components<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<section id="azure-embeddings">
+<h3>1. Azure Embeddings<a class="headerlink" href="#azure-embeddings" title="Link to this heading">#</a></h3>
+<p><cite>AzureOpenAIEmbeddingModel</cite> is a class that connects to the Azure OpenAI embedding service to generate vector representations of text queries and documents.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_embeddings.azure_embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureOpenAIEmbeddingModel</span>
+
+<span class="n">embeddings</span> <span class="o">=</span> <span class="n">AzureOpenAIEmbeddingModel</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;your_model_name&quot;</span><span class="p">,</span>
+    <span class="n">azure_api_key</span><span class="o">=</span><span class="s2">&quot;your_azure_api_key&quot;</span><span class="p">,</span>
+    <span class="n">azure_api_version</span><span class="o">=</span><span class="s2">&quot;your_azure_api_version&quot;</span><span class="p">,</span>
+    <span class="n">azure_deployment</span><span class="o">=</span><span class="s2">&quot;your_azure_deployment_name&quot;</span><span class="p">,</span>
+    <span class="n">azure_endpoint</span><span class="o">=</span><span class="s2">&quot;your_azure_endpoint&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set in environment variables AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, OPENAI_API_VERSION, AZURE_EMBEDDING_DEPLOYMENT_NAME</span>
+
+<span class="n">embed_text</span> <span class="o">=</span> <span class="n">embeddings</span><span class="o">.</span><span class="n">embed_query</span><span class="p">(</span><span class="s2">&quot;Your text to embed&quot;</span><span class="p">)</span>
+
+<span class="n">embed_docs</span> <span class="o">=</span> <span class="n">embeddings</span><span class="o">.</span><span class="n">embed_documents</span><span class="p">([</span><span class="s2">&quot;Document 1 text&quot;</span><span class="p">,</span> <span class="s2">&quot;Document 2 text&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_API_KEY</span></code> – API key for accessing the Azure OpenAI service.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_ENDPOINT</span></code> – Endpoint URL of your Azure OpenAI resource.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OPENAI_API_VERSION</span></code> – API version used for the embedding requests.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_EMBEDDING_DEPLOYMENT_NAME</span></code> – Deployment name for the embedding model on Azure.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-vectordb">
+<h1>Elsai VectorDB<a class="headerlink" href="#elsai-vectordb" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai VectorDB</strong> package provides interfaces to work with vector databases like <strong>ChromaDB</strong> and <strong>Pinecone</strong>, enabling efficient storage and retrieval of document embeddings.</p>
+<section id="id18">
+<h2>Prerequisites<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id19">
+<h2>Installation<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-vectordb</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-vectordb/<span class="w"> </span>elsai-vectordb<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id20">
+<h2>Components<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<section id="chromavectordb">
+<h3>1. ChromaVectorDb<a class="headerlink" href="#chromavectordb" title="Link to this heading">#</a></h3>
+<p><cite>ChromaVectorDb</cite> is a wrapper around ChromaDB to manage local document embeddings with persistent storage.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_vectordb.chromadb</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChromaVectorDb</span>
+
+<span class="n">chroma_client</span> <span class="o">=</span> <span class="n">ChromaVectorDb</span><span class="p">(</span><span class="n">persist_directory</span><span class="o">=</span><span class="s2">&quot;your_persist_directory&quot;</span><span class="p">)</span> <span class="c1"># Or set in environment variable CHROMA_PERSIST_DIRECTORY</span>
+
+<span class="n">chroma_client</span><span class="o">.</span><span class="n">create_if_not_exists</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">)</span>
+
+<span class="n">document</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;001&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;embeddings&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span>  <span class="c1"># Example embedding vector</span>
+    <span class="s2">&quot;page_content&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a sample document.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;metadatas&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;example_source&quot;</span><span class="p">,</span> <span class="s2">&quot;file_id&quot;</span><span class="p">:</span> <span class="s2">&quot;doc1&quot;</span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">chroma_client</span><span class="o">.</span><span class="n">add_document</span><span class="p">(</span><span class="n">document</span><span class="o">=</span><span class="n">document</span><span class="p">,</span> <span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">)</span>
+
+<span class="n">documents</span> <span class="o">=</span> <span class="n">chroma_client</span><span class="o">.</span><span class="n">retrieve_document</span><span class="p">(</span>
+    <span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">,</span>
+    <span class="n">embeddings</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span>
+    <span class="n">files_id</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;doc1&quot;</span><span class="p">],</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">5</span>
+<span class="p">)</span>
+
+<span class="n">collection</span> <span class="o">=</span> <span class="n">chroma_client</span><span class="o">.</span><span class="n">get_collection</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">)</span>
+
+<span class="n">chunks</span> <span class="o">=</span> <span class="n">chroma_client</span><span class="o">.</span><span class="n">fetch_chunks</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">,</span> <span class="n">files_id</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;doc1&quot;</span><span class="p">])</span>
+
+<span class="n">chroma_client</span><span class="o">.</span><span class="n">delete_collection</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;your_collection_name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CHROMA_PERSIST_DIRECTORY</span></code> – Path to the directory where ChromaDB will persist data locally</p></li>
+</ul>
+</section>
+<section id="pineconevectordb">
+<h3>2. PineconeVectorDb<a class="headerlink" href="#pineconevectordb" title="Link to this heading">#</a></h3>
+<p><cite>PineconeVectorDb</cite> integrates with Pinecone to manage vector search using cloud-hosted infrastructure.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_vectordb.pinecone</span><span class="w"> </span><span class="kn">import</span> <span class="n">PineconeVectorDb</span>
+
+<span class="n">pinecone_client</span> <span class="o">=</span> <span class="n">PineconeVectorDb</span><span class="p">(</span>
+    <span class="n">index_name</span><span class="o">=</span><span class="s2">&quot;testingindex&quot;</span><span class="p">,</span>
+    <span class="n">pinecone_api_key</span><span class="o">=</span><span class="s2">&quot;pinecone_api_key&quot;</span><span class="p">,</span>  <span class="c1"># Or set in environment variable PINECONE_API_KEY</span>
+    <span class="n">dimension</span><span class="o">=</span><span class="mi">1536</span>  <span class="c1"># Example dimension size</span>
+<span class="p">)</span>
+
+<span class="n">pinecone_client</span><span class="o">.</span><span class="n">add_document</span><span class="p">(</span>
+    <span class="n">document</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;001&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;embeddings&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span>  <span class="c1"># Replace with a 1536-dimension vector</span>
+        <span class="s2">&quot;page_content&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a sample document.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;metadatas&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;example_source&quot;</span><span class="p">,</span> <span class="s2">&quot;file_id&quot;</span><span class="p">:</span> <span class="s2">&quot;doc1&quot;</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">namespace</span><span class="o">=</span><span class="s2">&quot;namespacename&quot;</span>
+<span class="p">)</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="n">pinecone_client</span><span class="o">.</span><span class="n">retrieve_document</span><span class="p">(</span>
+    <span class="n">namespace</span><span class="o">=</span><span class="s2">&quot;namespacename&quot;</span><span class="p">,</span>
+    <span class="n">question_embedding</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span>
+    <span class="n">files_id</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;doc1&quot;</span><span class="p">],</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">5</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PINECONE_API_KEY</span></code> – API key to authenticate with Pinecone vector DB</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-retrievers">
+<h1>Elsai Retrievers<a class="headerlink" href="#elsai-retrievers" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Retrievers</strong> package provides an interface for performing <strong>hybrid document retrieval</strong> by combining <strong>semantic</strong> and <strong>sparse (BM25)</strong> search strategies. This enables more accurate and flexible information retrieval across multiple sources.</p>
+<section id="id21">
+<h2>Prerequisites<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with appropriate API keys and configuration variables</p></li>
+</ul>
+</section>
+<section id="id22">
+<h2>Installation<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-retrievers</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-retrievers/<span class="w"> </span>elsai-retrievers<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id23">
+<h2>Component<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<section id="hybridretriever">
+<h3>1. HybridRetriever<a class="headerlink" href="#hybridretriever" title="Link to this heading">#</a></h3>
+<p><cite>HybridRetriever</cite> is a class that enables combining results from multiple retrievers — including dense vector-based (semantic) and sparse (BM25) — into a single ranked list.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_retrievers.hybrid_retriever</span><span class="w"> </span><span class="kn">import</span> <span class="n">HybridRetriever</span>
+
+<span class="c1"># Create the hybrid retriever instance</span>
+<span class="n">hybrid_retriever</span> <span class="o">=</span> <span class="n">HybridRetriever</span><span class="p">()</span>
+
+<span class="c1"># Perform hybrid retrieval</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">hybrid_retriever</span><span class="o">.</span><span class="n">hybrid_retrieve</span><span class="p">(</span>
+    <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span>  <span class="c1"># Optional: for BM25-based retrieval</span>
+    <span class="n">retrievers</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;retriever1&quot;</span><span class="p">,</span> <span class="s2">&quot;retriever2&quot;</span><span class="p">],</span>  <span class="c1"># Semantic retrievers that support `.retrieve()`</span>
+    <span class="n">question</span><span class="o">=</span><span class="s2">&quot;How does hybrid retrieval work?&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="elsai-nli">
+<h1>Elsai NLI<a class="headerlink" href="#elsai-nli" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai NLI</strong> (Natural Language Interface) package enables users to ask natural language questions directly over structured data sources like CSV files using LLM-powered agents.</p>
+<section id="id24">
+<h2>Prerequisites<a class="headerlink" href="#id24" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+</ul>
+</section>
+<section id="id25">
+<h2>Installation<a class="headerlink" href="#id25" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-nli</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-nli/<span class="w"> </span>elsai-nli<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id26">
+<h2>Component<a class="headerlink" href="#id26" title="Link to this heading">#</a></h2>
+<section id="csvagenthandler">
+<h3>1. CSVAgentHandler<a class="headerlink" href="#csvagenthandler" title="Link to this heading">#</a></h3>
+<p><cite>CSVAgentHandler</cite> is a class that allows querying CSV files using natural language. It leverages an LLM and an agent interface to convert questions into structured operations.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_nli.natural_language_interface</span><span class="w"> </span><span class="kn">import</span> <span class="n">CSVAgentHandler</span>
+
+<span class="n">agent</span> <span class="o">=</span> <span class="n">CSVAgentHandler</span><span class="p">(</span>
+    <span class="n">csv_files</span><span class="o">=</span><span class="s2">&quot;path_to_csv&quot;</span><span class="p">,</span>  <span class="c1"># Can be a single file path or a list of paths</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llm_model&quot;</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">agent_type</span><span class="o">=</span><span class="s2">&quot;OPENAI_FUNCTIONS&quot;</span>
+<span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">ask_question</span><span class="p">(</span><span class="s2">&quot;What is the total sales amount for each product?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Parameters:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">csv_files</span></code> – Path or list of paths to CSV files to be queried</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">model</span></code> – Identifier or instance of the LLM to be used</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">agent_type</span></code> – Type of agent backend (e.g., <cite>OPENAI_FUNCTIONS</cite>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">verbose</span></code> – <em>(Optional)</em> Enables debug/log output during execution</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-speech-to-text">
+<h1>Elsai Speech-to-Text<a class="headerlink" href="#elsai-speech-to-text" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Speech-to-Text</strong> package provides an interface to transcribe audio using <strong>Azure OpenAI Whisper</strong>, enabling high-quality transcription of spoken content into text.</p>
+<section id="id27">
+<h2>Prerequisites<a class="headerlink" href="#id27" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+<li><p><cite>.env</cite> file with Azure OpenAI Whisper credentials:</p></li>
+</ul>
+</section>
+<section id="id28">
+<h2>Installation<a class="headerlink" href="#id28" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-stt</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-stt/<span class="w"> </span>elsai-stt<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id29">
+<h2>Component<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
+<section id="azureopenaiwhisper">
+<h3>1. AzureOpenAIWhisper<a class="headerlink" href="#azureopenaiwhisper" title="Link to this heading">#</a></h3>
+<p><cite>AzureOpenAIWhisper</cite> is a class used to transcribe audio using Azure’s hosted version of OpenAI Whisper. You can provide credentials directly or through environment variables.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_stt.azure_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AzureOpenAIWhisper</span>
+
+<span class="n">whisper</span> <span class="o">=</span> <span class="n">AzureOpenAIWhisper</span><span class="p">(</span>
+    <span class="n">api_version</span><span class="o">=</span><span class="s2">&quot;your_api_version&quot;</span><span class="p">,</span>
+    <span class="n">endpoint</span><span class="o">=</span><span class="s2">&quot;azure_whisper_endpoint&quot;</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;api_key&quot;</span><span class="p">,</span>
+    <span class="n">deployment_id</span><span class="o">=</span><span class="s2">&quot;deployment_id&quot;</span>
+<span class="p">)</span>  <span class="c1"># Or set via environment variables</span>
+
+<span class="c1"># Path to the audio file</span>
+<span class="n">test_file</span> <span class="o">=</span> <span class="s2">&quot;harvard.wav&quot;</span>
+
+<span class="c1"># Transcribe audio</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">whisper</span><span class="o">.</span><span class="n">transcribe_audio</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="n">test_file</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Required Environment Variables:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_API_VERSION</span></code> – Version of the Azure OpenAI API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_ENDPOINT</span></code> – Endpoint URL for Azure Whisper deployment</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_API_KEY</span></code> – API key for authenticating requests</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AZURE_OPENAI_DEPLOYMENT_ID</span></code> – Deployment ID for the Whisper model</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="elsai-utilities">
+<h1>Elsai Utilities<a class="headerlink" href="#elsai-utilities" title="Link to this heading">#</a></h1>
+<p>The <strong>Elsai Utilities</strong> package provides helper classes for chunking and converting documents for use in retrieval-augmented generation (RAG) and vector database ingestion pipelines.</p>
+<section id="id30">
+<h2>Prerequisites<a class="headerlink" href="#id30" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python 3.13</p></li>
+</ul>
+</section>
+<section id="id31">
+<h2>Installation<a class="headerlink" href="#id31" title="Link to this heading">#</a></h2>
+<p>To install the <cite>elsai-utilities</cite> package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://elsai-core-package.optisolbusiness.com/root/elsai-utilities/<span class="w"> </span>elsai-utilities<span class="o">==</span><span class="m">0</span>.1.0
+</pre></div>
+</div>
+</section>
+<section id="id32">
+<h2>Components<a class="headerlink" href="#id32" title="Link to this heading">#</a></h2>
+<section id="documentchunker">
+<h3>1. DocumentChunker<a class="headerlink" href="#documentchunker" title="Link to this heading">#</a></h3>
+<p>The <cite>DocumentChunker</cite> class provides various ways to split text into structured chunks.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_utilities.splitters</span><span class="w"> </span><span class="kn">import</span> <span class="n">DocumentChunker</span>
+
+<span class="n">chunker</span> <span class="o">=</span> <span class="n">DocumentChunker</span><span class="p">()</span>
+
+<span class="n">contents</span> <span class="o">=</span> <span class="s2">&quot;# This is the first page.</span><span class="se">\n\n</span><span class="s2">## This is the second page.</span><span class="se">\n\n</span><span class="s2">### This is the third page.&quot;</span>
+
+<span class="c1"># Page-wise chunking</span>
+<span class="n">chunks</span> <span class="o">=</span> <span class="n">chunker</span><span class="o">.</span><span class="n">chunk_page_wise</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="n">contents</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;example.md&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Markdown header-wise chunking</span>
+<span class="n">markdown_wise_chunks</span> <span class="o">=</span> <span class="n">chunker</span><span class="o">.</span><span class="n">chunk_markdown_header_wise</span><span class="p">(</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">contents</span><span class="p">,</span>
+    <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;example.md&quot;</span><span class="p">,</span>
+    <span class="n">headers_to_split_on</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;Header 1&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;##&quot;</span><span class="p">,</span> <span class="s2">&quot;Header 2&quot;</span><span class="p">)],</span>
+    <span class="n">strip_headers</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+
+<span class="c1"># Recursive character-wise chunking</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;This is a long piece of text that should be chunked recursively...&quot;</span>
+<span class="n">recursive_chunks</span> <span class="o">=</span> <span class="n">chunker</span><span class="o">.</span><span class="n">chunk_recursive</span><span class="p">(</span>
+    <span class="n">contents</span><span class="o">=</span><span class="n">text</span><span class="p">,</span>
+    <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;example.md&quot;</span><span class="p">,</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">10</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="documentconverter">
+<h3>2. DocumentConverter<a class="headerlink" href="#documentconverter" title="Link to this heading">#</a></h3>
+<p>The <cite>DocumentConverter</cite> class converts LlamaIndex documents into LangChain-compatible <cite>Document</cite> objects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">elsai_utilities.converters</span><span class="w"> </span><span class="kn">import</span> <span class="n">DocumentConverter</span>
+
+<span class="n">converter</span> <span class="o">=</span> <span class="n">DocumentConverter</span><span class="p">()</span>
+
+<span class="n">llama_index_document</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;text_resource&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a sample text extracted from LlamaIndex.&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">langchain_document</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">llama_index_to_langchain_document</span><span class="p">(</span>
+    <span class="n">llama_index_document</span><span class="o">=</span><span class="n">llama_index_document</span><span class="p">,</span>
+    <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;example.md&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Elsai Core Documentation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-model">Elsai Model</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#components">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#openaiconnector">1. OpenAIConnector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azureopenaiconnector">2. AzureOpenAIConnector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bedrockconnector">3. BedrockConnector</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-text-extractors">Elsai Text Extractors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csvfileextractor">1. CSVFileExtractor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docxtextextractor">2. DocxTextExtractor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pypdftextextractor">3. PyPDFTextExtractor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unstructuredexcelloader">4. UnstructuredExcelLoader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-ocr-extractors">Elsai OCR Extractors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azurecognitiveservice">1. AzureCognitiveService</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azuredocumentintelligence">2. AzureDocumentIntelligence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llama-parse-extractor">3. Llama Parse Extractor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visionai-extractor">4. VisionAI Extractor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amazon-textract">5. Amazon Textract</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-prompts">Elsai Prompts</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component">Component</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pezzopromptrenderer">1. PezzoPromptRenderer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-db-connectors">Elsai DB Connectors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#required-environment-variables">Required Environment Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mysqlsqlconnector">1. MySQLSQLConnector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#postgresqlconnector">2. PostgreSQLConnector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odbcmysqlconnector">3. OdbcMysqlConnector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odbcpostgresqlconnector">4. OdbcPostgresqlConnector</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-cloud-connectors">Elsai Cloud Connectors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#awss3connector">1. AwsS3Connector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azureblobstorage">2. AzureBlobStorage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#msgraphwebhooks">3. MSGraphWebhooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onedriveservice">4. OneDriveService</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharepointservice">5. SharePointService</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elasticsearch">6. ElasticSearch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-embeddings">Elsai Embeddings</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azure-embeddings">1. Azure Embeddings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-vectordb">Elsai VectorDB</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromavectordb">1. ChromaVectorDb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pineconevectordb">2. PineconeVectorDb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-retrievers">Elsai Retrievers</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Component</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybridretriever">1. HybridRetriever</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-nli">Elsai NLI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Component</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csvagenthandler">1. CSVAgentHandler</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-speech-to-text">Elsai Speech-to-Text</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Component</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azureopenaiwhisper">1. AzureOpenAIWhisper</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#elsai-utilities">Elsai Utilities</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentchunker">1. DocumentChunker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentconverter">2. DocumentConverter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Optisol.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
