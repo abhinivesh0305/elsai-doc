@@ -18,7 +18,7 @@ Elsai Core
 Overview
 --------
 
-Elsai Core streamlines every stage of the RAG application lifecycle:
+**Elsai Core** simplifies the development of intelligent, agent-based applications by offering a flexible set of modular components:
 
 - **Modular Composition**: Build applications faster using ready-to-use modules such as file extractors (PDF, DOCX, CSV), model connectors (OpenAI, Azure, Bedrock), and chunkers — all designed to work seamlessly together.
 - **Unified Orchestration**: Easily orchestrate full data-to-response pipelines with support for both structured (SQL, CSV) and unstructured (PDF, audio, DOCX) data using natural language interfaces.
@@ -26,9 +26,7 @@ Elsai Core streamlines every stage of the RAG application lifecycle:
 - **Hybrid Retrieval**: Enhance information relevance using Elsai's hybrid retrievers that combine dense (semantic) and sparse (keyword/BM25) search strategies.
 - **Multimodal Input Support**: Handle not just text but also audio via Whisper, scanned PDFs via OCR, and spreadsheet data — all processed under a unified chunking and retrieval strategy.
 
-Whether you're building an internal knowledge assistant, automating document insights, or enabling natural language access to business data, **Elsai Core** helps you get there faster — with reusable components, consistent design, and production-ready features.
-
-
+Whether you're building autonomous agents, internal tools, or data-aware assistants, **Elsai Core** provides the foundation to move from prototype to production with reusable components and consistent design.
 
 Architecture
 ------------
