@@ -31,8 +31,7 @@ Whether you're building autonomous agents, internal tools, or data-aware assista
 Architecture
 ------------
 
-The Elsai Core ecosystem is composed of loosely coupled packages that work together seamlessly. Each component serves a specific purpose in the RAG pipeline while maintaining compatibility with the broader ecosystem.
-
+The Elsai Core ecosystem is composed of loosely coupled packages that work together seamlessly. Each component serves a specific purpose while maintaining compatibility with the broader ecosystem.
 
 
 To learn more about each component and how to use them, visit the :doc:`User Guide <user-guide/index>` where you'll find detailed documentation for all Elsai modules.
