@@ -1,3 +1,19 @@
 footer.bd-footer, div.footer {
     display: none !important;
 }
+/* Custom styling for clean documentation */
+.bd-navbar {
+    background-color: #f8f9fa;
+}
+
+/* Improve content readability */
+.bd-article-container {
+    max-width: 900px;
+}
+
+/* Style for component overview sections */
+.toctree-wrapper .caption {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
