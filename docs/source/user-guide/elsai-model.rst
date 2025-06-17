@@ -82,6 +82,7 @@ Components
        aws_secret_key="your secret key",
        aws_session_token="your session token",
        aws_region="us-east-1",
+       max_tokens=500, #Default is 500
        temperature=0.1
    )  # Or set it as an environment variable
 
