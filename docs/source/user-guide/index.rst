@@ -21,6 +21,7 @@ Welcome to the Elsai Core User Guide. This section provides comprehensive docume
    elsai-nli
    elsai-stt
    elsai-utilities
+   elsai-chat-history
 
 Components Overview
 -------------------
@@ -51,6 +52,10 @@ Components Overview
 
 * :doc:`elsai-stt <elsai-stt>`: Transcribes audio files to text using Azure's hosted Whisper model.
 * :doc:`elsai-prompts <elsai-prompts>`: Retrieves and manages prompt templates from Pezzo for version-controlled prompt engineering.
+
+**Chat History**
+
+* :doc:`elsai-chat-history <elsai-chat-history>`: simplifies managing LLM-compatible chat histories with full async support, multi-backend storage, and pluggable memory strategies. Ideal for building scalable and memory-aware AI chat applications.
 
 Getting Started
 ---------------
